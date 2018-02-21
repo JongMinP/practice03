@@ -1,4 +1,4 @@
-package prob06;
+package prob07;
 
 import java.util.Scanner;
 
@@ -12,19 +12,23 @@ public class CalcApp {
 
 			switch (input[1]) {
 			case "+":
-				Add add = new Add(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
+				Arith add = new Add();
+				add.setValue(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
 				System.out.println(add.calculate());
 				break;
 			case "-":
-				Sub sub = new Sub(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
+				Arith sub = new Add();
+				sub.setValue(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
 				System.out.println(sub.calculate());
 				break;
 			case "*":
-				Mul mul = new Mul(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
+				Arith mul = new Add();
+				mul.setValue(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
 				System.out.println(mul.calculate());
 				break;
 			case "/":
-				Div div = new Div(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
+				Arith div = new Add();
+				div.setValue(Integer.parseInt(input[0]), Integer.parseInt(input[2]));
 				System.out.println(div.calculate());
 				break;
 
